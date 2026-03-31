@@ -62,40 +62,52 @@ export const galleryItems: GalleryItem[] = [
   {
     title: 'Feature Kitchen - Anthracite & Quartz',
     category: 'Kitchen',
-    image: `${assetBase}images/portfolio/kitchen-1.svg`,
+    image: `${assetBase}images/portfolio/kitchen-1.jpg`,
     alt: 'Dark modern fitted kitchen with white island and pendant lighting',
     featured: true
   },
   {
     title: 'Family Kitchen - Classic Grey',
     category: 'Kitchen',
-    image: `${assetBase}images/portfolio/kitchen-2.svg`,
+    image: `${assetBase}images/portfolio/kitchen-2.jpg`,
     alt: 'Grey shaker kitchen with white worktops and breakfast bar',
     featured: true
   },
   {
     title: 'Contemporary Kitchen - Timber Worktops',
     category: 'Kitchen',
-    image: `${assetBase}images/portfolio/kitchen-3.svg`,
+    image: `${assetBase}images/portfolio/kitchen-3.jpg`,
     alt: 'Contemporary fitted kitchen with timber worktops and grey units'
   },
   {
     title: 'Compact Kitchen Renovation',
     category: 'Kitchen',
-    image: `${assetBase}images/portfolio/kitchen-4.svg`,
+    image: `${assetBase}images/portfolio/kitchen-4.jpg`,
     alt: 'Compact kitchen renovation with peninsula breakfast bar'
   },
   {
     title: 'Open Plan Kitchen Installation',
     category: 'Kitchen',
-    image: `${assetBase}images/portfolio/kitchen-5.svg`,
+    image: `${assetBase}images/portfolio/kitchen-5.jpg`,
     alt: 'Open plan kitchen with island seating and glossy cabinetry'
   },
   {
-    title: 'Bathroom Project Placeholder',
+    title: 'Kitchen Installation - Feature Finishes',
+    category: 'Kitchen',
+    image: `${assetBase}images/portfolio/kitchen-6.jpg`,
+    alt: 'Kitchen installation with integrated appliances and premium finishes'
+  },
+  {
+    title: 'Bathroom Renovation - Modern Suite',
     category: 'Bathroom',
-    image: `${assetBase}images/portfolio/bathroom-placeholder.svg`,
-    alt: 'Bathroom project placeholder image ready for replacement'
+    image: `${assetBase}images/portfolio/bathroom-1.jpg`,
+    alt: 'Modern bathroom suite with contemporary fixtures and tiling'
+  },
+  {
+    title: 'Bathroom Installation - Clean Contemporary',
+    category: 'Bathroom',
+    image: `${assetBase}images/portfolio/bathroom-2.jpg`,
+    alt: 'Newly installed bathroom with clean contemporary design'
   }
 ]
 
