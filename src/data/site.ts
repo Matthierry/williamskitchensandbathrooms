@@ -60,10 +60,10 @@ export const areasCovered = [
   'Prescot',
   'Ellesmere Port',
   'Northwich',
-  'Chester',
   'Great Sankey',
   'Liverpool',
   'Weaverham',
+  'Chester',
   'Tarporley'
 ]
 
@@ -72,21 +72,21 @@ export const services: Service[] = [
     title: 'Kitchen Installation',
     featured: true,
     description:
-      'Complete kitchen fitting service including removal, preparation, fitting, finishing and final checks.',
-    bullets: ['Cabinet installation', 'Appliance integration', 'Precision finishing']
+      'Complete installation service for a smooth, stress-free finish, including preparation, fitting and final checks.',
+    bullets: ['Cabinet and appliance installation', 'Planned timelines and tidy working', 'High-quality finishing details']
   },
   {
     title: 'Kitchen Renovations',
     featured: true,
     description:
-      'Upgrade your existing kitchen with modern layouts, replacement units, improved storage and premium finishes.',
-    bullets: ['Design-to-install support', 'Layout improvements', 'Kitchen-first planning']
+      'Transform older spaces into practical, modern rooms with better flow, smarter storage and long-lasting materials.',
+    bullets: ['Design-to-install guidance', 'Layout and storage improvements', 'Fitted kitchens in Frodsham and nearby']
   },
   {
     title: 'Bathroom Installation',
     description:
-      'Stylish and practical bathroom installations with careful planning and dependable workmanship.',
-    bullets: ['Showers and suites', 'Wall and floor tiling', 'Bathroom refits']
+      'Create a bathroom that feels comfortable, modern and built to last, with careful planning at every stage.',
+    bullets: ['Showers, suites and bathroom refits', 'Wall and floor tiling', 'Bathroom renovation in Helsby and surrounding areas']
   },
   {
     title: 'Worktops, Sinks & Tiling',
@@ -97,7 +97,7 @@ export const services: Service[] = [
     title: 'Full Project Management',
     description:
       'One reliable team from first quote through to final handover, including plumbing and electrics where required.',
-    bullets: ['Start-to-finish coordination', 'Trusted trade network', 'Clear communication']
+    bullets: ['Start-to-finish coordination', 'Trusted local trade network', 'Clear updates and dependable scheduling']
   }
 ]
 
@@ -187,7 +187,7 @@ export const faqs: FaqItem[] = [
   {
     question: 'Which areas do you cover?',
     answer:
-      'We regularly cover Runcorn, Widnes, Frodsham, Helsby, Warrington, St Helens, Prescot, Ellesmere Port, Northwich, Chester, Great Sankey, Liverpool, Weaverham and Tarporley for kitchen and bathroom projects.'
+      'We regularly cover Runcorn, Widnes, Frodsham, Helsby, Warrington, St Helens, Prescot, Ellesmere Port, Northwich, Great Sankey, Liverpool, Weaverham, Chester and Tarporley for kitchen and bathroom projects.'
   },
   {
     question: 'How long does a typical kitchen installation take?',
