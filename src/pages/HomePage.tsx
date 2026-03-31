@@ -49,8 +49,7 @@ export function HomePage() {
                 Fitted kitchens and bathrooms with local, reliable workmanship.
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-silver sm:text-lg">
-                We install kitchens in Runcorn and bathrooms in Widnes, with trusted support for nearby towns.
-                From fitted kitchens in Frodsham to bathroom renovation in Helsby and kitchen installation in Warrington,
+                We cover fitted kitchens in Runcorn to bathroom renovation in Widnes and kitchen installation in Warrington,
                 every project is completed with care, clear communication and tidy finishes.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -141,8 +140,8 @@ export function HomePage() {
         <section id="portfolio" className="section-shell pb-16">
           <SectionHeading
             eyebrow="Recent work"
-            title="Kitchen projects first, with room to grow your gallery"
-            description="A selection of recent kitchen and bathroom installations, with kitchens featured first."
+            title="A selection of our kitchen and bathroom installations"
+            description="Work to be proud of"
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {galleryItems.map((item) => (
