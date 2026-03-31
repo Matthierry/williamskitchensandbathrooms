@@ -1,5 +1,7 @@
 import type { FaqItem, GalleryItem, ReviewItem, Service } from '../types'
 
+const assetBase = import.meta.env.BASE_URL
+
 export const phoneNumberDisplay = '07850 468326'
 export const phoneNumberHref = 'tel:+447850468326'
 
@@ -60,39 +62,39 @@ export const galleryItems: GalleryItem[] = [
   {
     title: 'Feature Kitchen - Anthracite & Quartz',
     category: 'Kitchen',
-    image: '/images/portfolio/kitchen-1.svg',
+    image: `${assetBase}images/portfolio/kitchen-1.svg`,
     alt: 'Dark modern fitted kitchen with white island and pendant lighting',
     featured: true
   },
   {
     title: 'Family Kitchen - Classic Grey',
     category: 'Kitchen',
-    image: '/images/portfolio/kitchen-2.svg',
+    image: `${assetBase}images/portfolio/kitchen-2.svg`,
     alt: 'Grey shaker kitchen with white worktops and breakfast bar',
     featured: true
   },
   {
     title: 'Contemporary Kitchen - Timber Worktops',
     category: 'Kitchen',
-    image: '/images/portfolio/kitchen-3.svg',
+    image: `${assetBase}images/portfolio/kitchen-3.svg`,
     alt: 'Contemporary fitted kitchen with timber worktops and grey units'
   },
   {
     title: 'Compact Kitchen Renovation',
     category: 'Kitchen',
-    image: '/images/portfolio/kitchen-4.svg',
+    image: `${assetBase}images/portfolio/kitchen-4.svg`,
     alt: 'Compact kitchen renovation with peninsula breakfast bar'
   },
   {
     title: 'Open Plan Kitchen Installation',
     category: 'Kitchen',
-    image: '/images/portfolio/kitchen-5.svg',
+    image: `${assetBase}images/portfolio/kitchen-5.svg`,
     alt: 'Open plan kitchen with island seating and glossy cabinetry'
   },
   {
     title: 'Bathroom Project Placeholder',
     category: 'Bathroom',
-    image: '/images/portfolio/bathroom-placeholder.svg',
+    image: `${assetBase}images/portfolio/bathroom-placeholder.svg`,
     alt: 'Bathroom project placeholder image ready for replacement'
   }
 ]
