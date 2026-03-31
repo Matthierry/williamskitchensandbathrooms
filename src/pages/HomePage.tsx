@@ -61,7 +61,7 @@ export function HomePage() {
 
             <div className="card overflow-hidden">
               <img
-                src={`${import.meta.env.BASE_URL}images/portfolio/kitchen-1.svg`}
+                src={`${import.meta.env.BASE_URL}images/portfolio/kitchen-1.jpg`}
                 alt="Modern dark fitted kitchen installed by Williams Kitchens and Bathrooms"
                 className="h-full min-h-[280px] w-full object-cover"
                 loading="eager"
@@ -125,7 +125,7 @@ export function HomePage() {
           <SectionHeading
             eyebrow="Recent work"
             title="Kitchen projects first, with room to grow your gallery"
-            description="Swap these placeholders with your latest project photos by replacing images in public/images/portfolio and editing src/data/site.ts."
+            description="A selection of recent kitchen and bathroom installations, with kitchens featured first."
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {galleryItems.map((item) => (
