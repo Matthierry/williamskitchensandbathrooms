@@ -44,19 +44,18 @@ export function HomePage() {
         <section className="section-shell pb-16 pt-12 sm:pt-16">
           <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_1fr]">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-blue">Kitchen fitter in Runcorn</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-blue">Kitchen and bathroom specialists in Runcorn & Widnes</p>
               <h1 className="mt-3 text-4xl font-black leading-tight text-white sm:text-5xl">
-                Premium kitchen installation with trusted local workmanship.
+                Fitted kitchens and bathrooms with local, reliable workmanship.
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-silver sm:text-lg">
-                Williams Kitchens & Bathrooms deliver high-quality kitchen renovations, kitchen fitting and bathroom
-                installation across Runcorn, Widnes, Frodsham, Helsby, Warrington, St Helens, Prescot, Ellesmere Port,
-                Northwich, Chester, Great Sankey, Liverpool, Weaverham and Tarporley. Family-run, experienced and focused on
-                clean, reliable installations from start to finish.
+                We install kitchens in Runcorn and bathrooms in Widnes, with trusted support for nearby towns.
+                From fitted kitchens in Frodsham to bathroom renovation in Helsby and kitchen installation in Warrington,
+                every project is completed with care, clear communication and tidy finishes.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a href={phoneNumberHref} className="cta-primary">Call Now</a>
-                <a href="#contact" className="cta-secondary">Get a Free Quote</a>
+                <a href="#contact" className="cta-secondary">Request a free quote</a>
               </div>
               <p className="mt-4 text-sm text-brand-silver">Free quotes • 15+ years experience • Local trusted service</p>
             </div>
@@ -101,8 +100,8 @@ export function HomePage() {
         <section id="services" className="section-shell py-16">
           <SectionHeading
             eyebrow="Services"
-            title="Kitchen-first services designed around your home"
-            description="Our core work is kitchen installation and renovation, with bathrooms and supporting trades delivered to the same standard."
+            title="Kitchen and bathroom services tailored to your home"
+            description="From first visit to final handover, we focus on practical layouts, quality finishes and dependable timescales."
           />
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {services.map((service) => (
@@ -122,8 +121,8 @@ export function HomePage() {
         <section className="section-shell pb-16">
           <SectionHeading
             eyebrow="Why choose us"
-            title="A reliable team for kitchens and bathrooms"
-            description="We keep the process clear, practical and tidy so you always know what is happening and what comes next."
+            title="A trusted local team from quote to completion"
+            description="You get honest advice, reliable workmanship and a professional finish you can enjoy for years."
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
@@ -197,10 +196,14 @@ export function HomePage() {
         <section id="areas" className="section-shell pb-16">
           <SectionHeading
             eyebrow="Areas we cover"
-            title="Local kitchen and bathroom installation across Cheshire and nearby"
-            description="We’re based locally and regularly work throughout the following areas. If you’re nearby, get in touch for a quick quote."
+            title="Areas We Cover"
+            description="We provide kitchen and bathroom services across the local area, including:"
           />
-          <p className="card p-6 text-base leading-relaxed text-brand-silver">{areasCovered.join(', ')}.</p>
+          <ul className="card grid gap-2 p-6 text-base leading-relaxed text-brand-silver sm:grid-cols-2 lg:grid-cols-3">
+            {areasCovered.map((area) => (
+              <li key={area}>• {area}</li>
+            ))}
+          </ul>
         </section>
 
         <section id="faq" className="section-shell pb-16">
@@ -218,13 +221,13 @@ export function HomePage() {
         <section id="contact" className="section-shell pb-16">
           <SectionHeading
             eyebrow="Free quote"
-            title="Ready to plan your kitchen project?"
-            description="Call now for the fastest response, or send a quote request and we’ll get back to you shortly."
+            title="Ready to start your kitchen or bathroom project?"
+            description="Get a quote today, contact us for advice, or book a consultation at a time that suits you."
           />
           <div className="grid gap-6 lg:grid-cols-2">
             <div className="card p-6">
-              <a href={phoneNumberHref} className="cta-primary w-full text-base">Call {phoneNumberDisplay}</a>
-              <p className="mt-4 text-sm text-brand-silver">Serving {areasCovered.join(', ')} with trusted kitchen and bathroom fitting.</p>
+              <a href={phoneNumberHref} className="cta-primary w-full text-base">Contact us: {phoneNumberDisplay}</a>
+              <p className="mt-4 text-sm text-brand-silver">Serving local homeowners with trusted kitchens and bathrooms across Runcorn, Widnes, Frodsham, Helsby and Warrington.</p>
             </div>
 
             <form className="card p-6" onSubmit={handleSubmit}>
@@ -257,7 +260,7 @@ export function HomePage() {
               <p className="mt-3 text-xs text-brand-slate">
                 GitHub Pages note: this form currently uses a frontend-only success flow. Connect Formspree or Netlify Forms later for live submissions.
               </p>
-              <button type="submit" className="cta-primary mt-4 w-full">Send quote request</button>
+              <button type="submit" className="cta-primary mt-4 w-full">Book a consultation</button>
             </form>
           </div>
         </section>
