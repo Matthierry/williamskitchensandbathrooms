@@ -61,7 +61,7 @@ export function HomePage() {
 
             <div className="card overflow-hidden">
               <img
-                src="/images/portfolio/kitchen-1.svg"
+                src={`${import.meta.env.BASE_URL}images/portfolio/kitchen-1.svg`}
                 alt="Modern dark fitted kitchen installed by Williams Kitchens and Bathrooms"
                 className="h-full min-h-[280px] w-full object-cover"
                 loading="eager"
