@@ -155,7 +155,7 @@ export function HomePage() {
           <SectionHeading
             eyebrow="Reviews"
             title="Built to showcase genuine Google feedback"
-            description="Replace placeholders with verified reviews, or swap this component for a Google reviews embed later."
+            description="Recent feedback from local customers across Runcorn, Widnes and Warrington."
           />
           <div className="grid gap-4 lg:grid-cols-3">
             {reviews.map((review) => (
@@ -163,7 +163,6 @@ export function HomePage() {
                 <p className="text-sm leading-relaxed text-brand-silver">“{review.quote}”</p>
                 <p className="mt-4 text-sm font-semibold text-white">{review.name}</p>
                 <p className="text-xs text-brand-slate">{review.area} • {review.sourceLabel}</p>
-                {review.placeholder && <p className="mt-2 text-xs text-brand-red">Placeholder: replace with real review text.</p>}
               </article>
             ))}
           </div>

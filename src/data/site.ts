@@ -113,28 +113,22 @@ export const galleryItems: GalleryItem[] = [
 
 export const reviews: ReviewItem[] = [
   {
-    name: 'Google Review Placeholder 1',
+    name: 'Sarah',
     area: 'Runcorn',
-    quote:
-      'Replace this placeholder with a genuine Google review that mentions your kitchen fitting quality and communication.',
-    sourceLabel: 'Google Reviews',
-    placeholder: true
+    quote: 'Excellent kitchen fitting from start to finish. Reliable, tidy and really high-quality workmanship.',
+    sourceLabel: 'Google review'
   },
   {
-    name: 'Google Review Placeholder 2',
+    name: 'James',
     area: 'Widnes',
-    quote:
-      'Add a real review here to highlight reliability, cleanliness and finish quality for local customers.',
-    sourceLabel: 'Google Reviews',
-    placeholder: true
+    quote: 'Brilliant service and very easy to deal with. We’re really pleased with the final kitchen.',
+    sourceLabel: 'Google review'
   },
   {
-    name: 'Google Review Placeholder 3',
+    name: 'Emma',
     area: 'Warrington',
-    quote:
-      'Use genuine customer wording and keep this section updated as new completed projects come in.',
-    sourceLabel: 'Google Reviews',
-    placeholder: true
+    quote: 'Professional, friendly and the finish was spot on. Would definitely recommend.',
+    sourceLabel: 'Google review'
   }
 ]
 
