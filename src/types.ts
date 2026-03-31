@@ -25,3 +25,9 @@ export type FaqItem = {
   question: string
   answer: string
 }
+
+export type SupplierLogo = {
+  name: string
+  image: string
+  alt: string
+}

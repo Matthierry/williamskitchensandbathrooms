@@ -1,4 +1,4 @@
-import type { FaqItem, GalleryItem, ReviewItem, Service } from '../types'
+import type { FaqItem, GalleryItem, ReviewItem, Service, SupplierLogo } from '../types'
 
 const assetBase = import.meta.env.BASE_URL
 
@@ -22,7 +22,50 @@ export const trustSignals = [
   'Local trusted service'
 ]
 
-export const areasCovered = ['Runcorn', 'Widnes', 'Warrington', 'Northwich', 'Liverpool', 'Cheshire']
+export const supplierLogos: SupplierLogo[] = [
+  {
+    name: 'B&Q',
+    image: `${assetBase}images/branding/bq-logo.jpg`,
+    alt: 'B&Q kitchen supplier logo'
+  },
+  {
+    name: 'Wren',
+    image: `${assetBase}images/branding/wren-logo.jpg`,
+    alt: 'Wren Kitchens supplier logo'
+  },
+  {
+    name: 'Howdens',
+    image: `${assetBase}images/branding/howdens-logo.jpg`,
+    alt: 'Howdens kitchen supplier logo'
+  },
+  {
+    name: 'Wickes',
+    image: `${assetBase}images/branding/wickes-logo.jpg`,
+    alt: 'Wickes kitchen supplier logo'
+  },
+  {
+    name: 'Magnet',
+    image: `${assetBase}images/branding/magnet-logo.jpg`,
+    alt: 'Magnet kitchen supplier logo'
+  }
+]
+
+export const areasCovered = [
+  'Runcorn',
+  'Widnes',
+  'Frodsham',
+  'Helsby',
+  'Warrington',
+  'St Helens',
+  'Prescot',
+  'Ellesmere Port',
+  'Northwich',
+  'Chester',
+  'Great Sankey',
+  'Liverpool',
+  'Weaverham',
+  'Tarporley'
+]
 
 export const services: Service[] = [
   {
@@ -113,21 +156,24 @@ export const galleryItems: GalleryItem[] = [
 
 export const reviews: ReviewItem[] = [
   {
-    name: 'Sarah',
-    area: 'Runcorn',
-    quote: 'Excellent kitchen fitting from start to finish. Reliable, tidy and really high-quality workmanship.',
+    name: 'John',
+    area: '',
+    quote:
+      'Bought new kitchen from Wren. Jason and Alan carefully removed old kitchen (because we sold it) and fitted new one. They are honest, reliable, hard-working guys who are happy to help any way they can. Nothing is too much trouble and their work is of the highest standard. Great job, highly recommended.',
     sourceLabel: 'Google review'
   },
   {
-    name: 'James',
-    area: 'Widnes',
-    quote: 'Brilliant service and very easy to deal with. We’re really pleased with the final kitchen.',
+    name: 'Andrea',
+    area: '',
+    quote:
+      "Just had my kitchen fitted by Jason and Alan, and couldn't be happier with the kitchen and the service received. They are trustworthy, punctual, arriving exactly when they say they will, the workmanship and quality of finish cannot be faulted, and nothing was too much trouble.",
     sourceLabel: 'Google review'
   },
   {
-    name: 'Emma',
-    area: 'Warrington',
-    quote: 'Professional, friendly and the finish was spot on. Would definitely recommend.',
+    name: 'Louise',
+    area: '',
+    quote:
+      "Alan and Jason just fitted our en suite shower room. Can't recommend them highly enough. Outstanding workmanship, completed within the timescale predicted. Great communication and problem solving skills. Overall just fantastic.",
     sourceLabel: 'Google review'
   }
 ]
@@ -141,7 +187,7 @@ export const faqs: FaqItem[] = [
   {
     question: 'Which areas do you cover?',
     answer:
-      'We regularly cover Runcorn, Widnes, Warrington, Northwich, Liverpool and wider Cheshire for kitchen and bathroom projects.'
+      'We regularly cover Runcorn, Widnes, Frodsham, Helsby, Warrington, St Helens, Prescot, Ellesmere Port, Northwich, Chester, Great Sankey, Liverpool, Weaverham and Tarporley for kitchen and bathroom projects.'
   },
   {
     question: 'How long does a typical kitchen installation take?',

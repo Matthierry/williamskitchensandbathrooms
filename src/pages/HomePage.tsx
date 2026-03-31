@@ -12,6 +12,7 @@ import {
   phoneNumberHref,
   reviews,
   services,
+  supplierLogos,
   trustSignals
 } from '../data/site'
 
@@ -49,7 +50,8 @@ export function HomePage() {
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-silver sm:text-lg">
                 Williams Kitchens & Bathrooms deliver high-quality kitchen renovations, kitchen fitting and bathroom
-                installation across Runcorn, Widnes, Warrington and Cheshire. Family-run, experienced and focused on
+                installation across Runcorn, Widnes, Frodsham, Helsby, Warrington, St Helens, Prescot, Ellesmere Port,
+                Northwich, Chester, Great Sankey, Liverpool, Weaverham and Tarporley. Family-run, experienced and focused on
                 clean, reliable installations from start to finish.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -77,6 +79,22 @@ export function HomePage() {
                 {signal}
               </span>
             ))}
+          </div>
+        </section>
+
+        <section className="section-shell py-6 sm:py-8">
+          <div className="card border-white/10 bg-white/[0.03] px-4 py-5 sm:px-6">
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.18em] text-brand-slate">
+              We fit kitchens from trusted suppliers
+            </p>
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+              {supplierLogos.map((logo) => (
+                <div key={logo.name} className="rounded-xl border border-white/10 bg-white px-3 py-2 shadow-sm shadow-black/20">
+                  <img src={logo.image} alt={logo.alt} className="h-6 w-auto sm:h-7" loading="lazy" />
+                </div>
+              ))}
+            </div>
+            <p className="mt-4 text-center text-xs text-brand-slate">plus many more</p>
           </div>
         </section>
 
@@ -154,15 +172,15 @@ export function HomePage() {
         <section id="reviews" className="section-shell pb-16">
           <SectionHeading
             eyebrow="Reviews"
-            title="Built to showcase genuine Google feedback"
-            description="Recent feedback from local customers across Runcorn, Widnes and Warrington."
+            title="Built around genuine customer feedback"
+            description="Recent feedback from local kitchen and bathroom installations."
           />
           <div className="grid gap-4 lg:grid-cols-3">
             {reviews.map((review) => (
               <article key={review.name} className="card p-6">
                 <p className="text-sm leading-relaxed text-brand-silver">“{review.quote}”</p>
                 <p className="mt-4 text-sm font-semibold text-white">{review.name}</p>
-                <p className="text-xs text-brand-slate">{review.area} • {review.sourceLabel}</p>
+                <p className="text-xs text-brand-slate">{review.area ? `${review.area} • ${review.sourceLabel}` : review.sourceLabel}</p>
               </article>
             ))}
           </div>
@@ -179,7 +197,7 @@ export function HomePage() {
         <section id="areas" className="section-shell pb-16">
           <SectionHeading
             eyebrow="Areas we cover"
-            title="Local kitchen and bathroom installation across Cheshire"
+            title="Local kitchen and bathroom installation across Cheshire and nearby"
             description="We’re based locally and regularly work throughout the following areas. If you’re nearby, get in touch for a quick quote."
           />
           <p className="card p-6 text-base leading-relaxed text-brand-silver">{areasCovered.join(', ')}.</p>
