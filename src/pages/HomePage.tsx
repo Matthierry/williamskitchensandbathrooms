@@ -226,7 +226,7 @@ export function HomePage() {
           <div className="grid gap-6 lg:grid-cols-2">
             <div className="card p-6">
               <a href={phoneNumberHref} className="cta-primary w-full text-base">Contact us: {phoneNumberDisplay}</a>
-              <p className="mt-4 text-sm text-brand-silver">Serving local homeowners with trusted kitchens and bathrooms across Runcorn, Widnes, Frodsham, Helsby and Warrington.</p>
+              <p className="mt-4 text-sm text-brand-silver">Serving local homeowners with trusted kitchens and bathrooms across Runcorn, Widnes, Frodsham, Helsby, Warrington, St Helens, Prescot, Ellesmere Port, Northwich, Chester, Liverpool & Tarporley.</p>
             </div>
 
             <form className="card p-6" onSubmit={handleSubmit}>
