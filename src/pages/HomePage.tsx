@@ -49,7 +49,7 @@ export function HomePage() {
                 Fitted kitchens and bathrooms with local, reliable workmanship.
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-silver sm:text-lg">
-                We cover fitted kitchens in Runcorn to bathroom renovation in Widnes and kitchen installation in Warrington,
+                From fitted kitchens in Runcorn to bathroom renovations in Widnes and kitchen installation in Warrington,
                 every project is completed with care, clear communication and tidy finishes.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
