@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://matthierry.github.io/williamskitchensandbathrooms/sitemap.xml
+Sitemap: https://williamskitchensandbathrooms.com/sitemap.xml
