@@ -287,7 +287,7 @@ export function HomePage() {
             addressRegion: 'Cheshire',
             addressCountry: 'GB'
           },
-          url: 'https://matthierry.github.io/williamskitchensandbathrooms/',
+          url: 'https://williamskitchensandbathrooms.com/',
           sameAs: ['https://facebook.com']
         })}
       </script>
