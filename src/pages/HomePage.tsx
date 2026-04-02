@@ -11,8 +11,6 @@ import {
   phoneNumberDisplay,
   phoneNumberHref,
   reviews,
-  services,
-  supplierLogos,
   trustSignals
 } from '../data/site'
 
@@ -76,43 +74,6 @@ export function HomePage() {
               <span key={signal} className="rounded-full border border-white/10 bg-black/20 px-4 py-2 text-xs font-medium text-brand-silver sm:text-sm">
                 {signal}
               </span>
-            ))}
-          </div>
-        </section>
-
-        <section className="section-shell py-6 sm:py-8">
-          <div className="card border-white/10 bg-white/[0.03] px-4 py-5 sm:px-6">
-            <p className="text-center text-xs font-semibold uppercase tracking-[0.18em] text-brand-slate">
-              We fit kitchens from trusted suppliers
-            </p>
-            <div className="mt-4 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-              {supplierLogos.map((logo) => (
-                <div key={logo.name} className="rounded-xl border border-white/10 bg-white px-3 py-2 shadow-sm shadow-black/20">
-                  <img src={logo.image} alt={logo.alt} className="h-6 w-auto sm:h-7" loading="lazy" />
-                </div>
-              ))}
-            </div>
-            <p className="mt-4 text-center text-xs text-brand-slate">plus many more</p>
-          </div>
-        </section>
-
-        <section id="services" className="section-shell py-16">
-          <SectionHeading
-            eyebrow="Services"
-            title="Kitchen and bathroom services tailored to your home"
-            description="From first visit to final handover, we focus on practical layouts, quality finishes and dependable timescales."
-          />
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {services.map((service) => (
-              <article key={service.title} className={`card p-6 ${service.featured ? 'border-brand-blue/40' : ''}`}>
-                <h3 className="text-xl font-semibold text-white">{service.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-brand-silver">{service.description}</p>
-                <ul className="mt-4 space-y-2 text-sm text-white/90">
-                  {service.bullets.map((bullet) => (
-                    <li key={bullet}>• {bullet}</li>
-                  ))}
-                </ul>
-              </article>
             ))}
           </div>
         </section>
