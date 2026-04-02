@@ -78,7 +78,7 @@ export function HomePage() {
           </div>
         </section>
 
-        <section className="section-shell pb-16">
+        <section className="section-shell pb-16 pt-12 sm:pt-16">
           <SectionHeading
             eyebrow="Why choose us"
             title="A trusted local team from quote to completion"
