@@ -1,10 +1,3 @@
-export type Service = {
-  title: string
-  description: string
-  bullets: string[]
-  featured?: boolean
-}
-
 export type GalleryItem = {
   title: string
   category: 'Kitchen' | 'Bathroom'
@@ -24,10 +17,4 @@ export type ReviewItem = {
 export type FaqItem = {
   question: string
   answer: string
-}
-
-export type SupplierLogo = {
-  name: string
-  image: string
-  alt: string
 }

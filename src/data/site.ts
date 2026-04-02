@@ -1,4 +1,4 @@
-import type { FaqItem, GalleryItem, ReviewItem, Service, SupplierLogo } from '../types'
+import type { FaqItem, GalleryItem, ReviewItem } from '../types'
 
 const assetBase = import.meta.env.BASE_URL
 
@@ -6,7 +6,6 @@ export const phoneNumberDisplay = '07850 468326'
 export const phoneNumberHref = 'tel:+447850468326'
 
 export const navLinks = [
-  { id: 'services', label: 'Services' },
   { id: 'portfolio', label: 'Portfolio' },
   { id: 'reviews', label: 'Reviews' },
   { id: 'areas', label: 'Areas' },
@@ -20,34 +19,6 @@ export const trustSignals = [
   '15+ years experience',
   'Free quotes',
   'Local trusted service'
-]
-
-export const supplierLogos: SupplierLogo[] = [
-  {
-    name: 'B&Q',
-    image: `${assetBase}images/branding/bq-logo.jpg`,
-    alt: 'B&Q kitchen supplier logo'
-  },
-  {
-    name: 'Wren',
-    image: `${assetBase}images/branding/wren-logo.jpg`,
-    alt: 'Wren Kitchens supplier logo'
-  },
-  {
-    name: 'Howdens',
-    image: `${assetBase}images/branding/howdens-logo.jpg`,
-    alt: 'Howdens kitchen supplier logo'
-  },
-  {
-    name: 'Wickes',
-    image: `${assetBase}images/branding/wickes-logo.jpg`,
-    alt: 'Wickes kitchen supplier logo'
-  },
-  {
-    name: 'Magnet',
-    image: `${assetBase}images/branding/magnet-logo.jpg`,
-    alt: 'Magnet kitchen supplier logo'
-  }
 ]
 
 export const areasCovered = [
@@ -65,40 +36,6 @@ export const areasCovered = [
   'Weaverham',
   'Chester',
   'Tarporley'
-]
-
-export const services: Service[] = [
-  {
-    title: 'Kitchen Installation',
-    featured: true,
-    description:
-      'Complete installation service for a smooth, stress-free finish, including preparation, fitting and final checks.',
-    bullets: ['Cabinet and appliance installation', 'Planned timelines and tidy working', 'High-quality finishing details']
-  },
-  {
-    title: 'Kitchen Renovations',
-    featured: true,
-    description:
-      'Transform older spaces into practical, modern rooms with better flow, smarter storage and long-lasting materials.',
-    bullets: ['Design-to-install guidance', 'Layout and storage improvements', 'Fitted kitchens in Frodsham and nearby']
-  },
-  {
-    title: 'Bathroom Installation',
-    description:
-      'Create a bathroom that feels comfortable, modern and built to last, with careful planning at every stage.',
-    bullets: ['Showers, suites and bathroom refits', 'Wall and floor tiling', 'Bathroom renovation in Helsby and surrounding areas']
-  },
-  {
-    title: 'Worktops, Sinks & Tiling',
-    description: 'Refresh your space with replacement worktops, sinks, splashbacks and precise tiling work.',
-    bullets: ['Worktop replacement', 'Sink and tap fitting', 'Feature tiling']
-  },
-  {
-    title: 'Full Project Management',
-    description:
-      'One reliable team from first quote through to final handover, including plumbing and electrics where required.',
-    bullets: ['Start-to-finish coordination', 'Trusted local trade network', 'Clear updates and dependable scheduling']
-  }
 ]
 
 export const galleryItems: GalleryItem[] = [
