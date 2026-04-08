@@ -200,12 +200,12 @@ export function HomePage() {
                 </label>
                 <label htmlFor="contact-service" className="text-sm text-brand-silver">
                   Service
-                  <input id="contact-service" name="service" type="text" required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" placeholder="Kitchen installation" />
+                  <input id="contact-service" name="service" type="text" required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" placeholder="Kitchen/Bathroom installation" />
                 </label>
               </div>
               <label htmlFor="contact-area" className="mt-4 block text-sm text-brand-silver">
                 Area
-                <input id="contact-area" name="area" type="text" required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" placeholder="Runcorn" />
+                <input id="contact-area" name="area" type="text" required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" placeholder="Area and/or Postcode" />
               </label>
               <label htmlFor="contact-message" className="mt-4 block text-sm text-brand-silver">
                 Message
