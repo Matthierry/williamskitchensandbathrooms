@@ -1,5 +1,4 @@
-import { FormEvent, useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useMemo, useState } from 'react'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { MobileCallBar } from '../components/MobileCallBar'
@@ -14,26 +13,10 @@ import {
   trustSignals
 } from '../data/site'
 
-const initialForm = {
-  name: '',
-  phone: '',
-  email: '',
-  service: '',
-  area: '',
-  message: ''
-}
-
 export function HomePage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
-  const [formData, setFormData] = useState(initialForm)
-  const navigate = useNavigate()
 
   const featuredProjects = useMemo(() => galleryItems.filter((item) => item.featured), [])
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-    navigate('/thank-you')
-  }
 
   return (
     <div id="top" className="bg-brand-ink bg-grain">
@@ -190,36 +173,44 @@ export function HomePage() {
               <p className="mt-4 text-sm text-brand-silver">Serving local homeowners with trusted kitchens and bathrooms across Runcorn, Widnes, Frodsham, Helsby, Warrington, St Helens, Prescot, Ellesmere Port, Northwich, Chester, Liverpool & Tarporley.</p>
             </div>
 
-            <form className="card p-6" onSubmit={handleSubmit}>
+            {/* Replace YOUR_EMAIL_HERE with your real email address. First FormSubmit submission may require email activation/confirmation. */}
+            <form
+              className="card p-6"
+              action="https://formsubmit.co/scenickitchens@gmail.com"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="New website enquiry" />
+              <input type="hidden" name="_next" value="https://williamskitchensandbathrooms.com/thanks.html" />
+              <input type="hidden" name="_captcha" value="true" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_cc" value="statmatt14@gmail.com" />
+              <input type="text" name="_honey" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
               <div className="grid gap-4 sm:grid-cols-2">
-                <label className="text-sm text-brand-silver">
+                <label htmlFor="contact-name" className="text-sm text-brand-silver">
                   Name
-                  <input required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" value={formData.name} onChange={(event) => setFormData((prev) => ({ ...prev, name: event.target.value }))} />
+                  <input id="contact-name" name="name" type="text" required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" />
                 </label>
-                <label className="text-sm text-brand-silver">
+                <label htmlFor="contact-phone" className="text-sm text-brand-silver">
                   Phone
-                  <input required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" value={formData.phone} onChange={(event) => setFormData((prev) => ({ ...prev, phone: event.target.value }))} />
+                  <input id="contact-phone" name="phone" type="tel" required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" />
                 </label>
-                <label className="text-sm text-brand-silver">
+                <label htmlFor="contact-email" className="text-sm text-brand-silver">
                   Email
-                  <input type="email" required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" value={formData.email} onChange={(event) => setFormData((prev) => ({ ...prev, email: event.target.value }))} />
+                  <input id="contact-email" name="email" type="email" required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" />
                 </label>
-                <label className="text-sm text-brand-silver">
+                <label htmlFor="contact-service" className="text-sm text-brand-silver">
                   Service
-                  <input required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" value={formData.service} onChange={(event) => setFormData((prev) => ({ ...prev, service: event.target.value }))} placeholder="Kitchen installation" />
+                  <input id="contact-service" name="service" type="text" required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" placeholder="Kitchen installation" />
                 </label>
               </div>
-              <label className="mt-4 block text-sm text-brand-silver">
+              <label htmlFor="contact-area" className="mt-4 block text-sm text-brand-silver">
                 Area
-                <input required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" value={formData.area} onChange={(event) => setFormData((prev) => ({ ...prev, area: event.target.value }))} placeholder="Runcorn" />
+                <input id="contact-area" name="area" type="text" required className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" placeholder="Runcorn" />
               </label>
-              <label className="mt-4 block text-sm text-brand-silver">
+              <label htmlFor="contact-message" className="mt-4 block text-sm text-brand-silver">
                 Message
-                <textarea required rows={4} className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" value={formData.message} onChange={(event) => setFormData((prev) => ({ ...prev, message: event.target.value }))} />
+                <textarea id="contact-message" name="message" required rows={4} className="mt-1 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2 text-white" />
               </label>
-              <p className="mt-3 text-xs text-brand-slate">
-                GitHub Pages note: this form currently uses a frontend-only success flow. Connect Formspree or Netlify Forms later for live submissions.
-              </p>
               <button type="submit" className="cta-primary mt-4 w-full">Book a consultation</button>
             </form>
           </div>
